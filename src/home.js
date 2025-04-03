@@ -134,7 +134,6 @@ const Home=()=>{
     const [inputName, setInputName] = useState('');
     const [tehilimResults, setTehilimResults] = useState([]);
     const [mishnaResults, setMishnaResults] = useState([]);
-  
     const handleNameChange = (event) => {
       setInputName(event.target.value);
     };
@@ -171,6 +170,7 @@ const Home=()=>{
             boxSizing: "border-box" // Ensures padding doesn’t push it beyond 60%
         }}>
             <h1 style={{textAlign: "center", fontSize:"60px"}}>לימוד לעילוי נשמה לפי שם</h1>
+            <h1 style={{textAlign: "center", fontSize:"40px"}}>לעילוי נשמת כוכבה בת יסמינה</h1>
             <input 
                 type="text"
                 value={inputName}
