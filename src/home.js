@@ -159,14 +159,14 @@ const Home=()=>{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            width: "60%",
+            width: "80%",
             overflowWrap: "break-word",
             direction: "rtl",
             height: "100vh",
             textAlign: "right",
             margin: "0 auto",
             whiteSpace: "normal",
-            maxWidth: "60%", // Enforces a hard limit
+            maxWidth: "80%", // Enforces a hard limit
             boxSizing: "border-box" // Ensures padding doesn’t push it beyond 60%
         }}>
             <h1 style={{textAlign: "center", fontSize:"60px"}}>לימוד לעילוי נשמה לפי שם</h1>
@@ -191,7 +191,7 @@ const Home=()=>{
                     fontSize:"32px",
                 }}>תפילה לפני הלימוד</h2>
                 {before_limud.length>0?(
-                    <pre style={{fontSize:"26px"}}>{before_limud}</pre>
+                    <pre style={{fontSize:"26px",whiteSpace: "pre-wrap",fontWeight:"bold"}}>{before_limud}</pre>
                 ):(
                     <p>לא נמצא</p>
                 )}
@@ -202,7 +202,7 @@ const Home=()=>{
                     textAlign:"right"
                 }}>תהילים</h2>
                 {tehilimResults.length>0?(
-                    <pre style={{fontSize:"26px",whiteSpace: "pre-wrap"}}>{tehilimResults.join("\n")}</pre>
+                    <pre style={{fontSize:"26px",whiteSpace: "pre-wrap",fontWeight:"bold"}}>{tehilimResults.join("\n")}</pre>
                 ):(
                     <p>לא נמצא</p>
                 )}
@@ -213,7 +213,7 @@ const Home=()=>{
                     textAlign:"right"
                 }}>משניות</h2>
                 {mishnaResults.length>0?(
-                    <pre style={{fontSize:"26px",whiteSpace: "pre-wrap"}}>{mishnaResults.join("\n")}</pre>
+                    <pre style={{fontSize:"26px",whiteSpace: "pre-wrap",fontWeight:"bold"}}>{mishnaResults.join("\n")}</pre>
                 ):(
                     <p>לא נמצא</p>
                 )}
@@ -224,7 +224,7 @@ const Home=()=>{
                     textAlign:"right"
                 }}>משניות אותיות נשמה</h2>
                 {neshama_char.length>0?(
-                    <pre style={{fontSize:"26px",whiteSpace: "pre-wrap"}}>{neshama_char}</pre>
+                    <pre style={{fontSize:"26px",whiteSpace: "pre-wrap",fontWeight:"bold"}}>{neshama_char}</pre>
                 ):(
                     <p>לא נמצא</p>
                 )}
@@ -235,7 +235,7 @@ const Home=()=>{
                     textAlign:"right"
                 }}>תפילה לאחר הלימוד</h2>
                 {neshama_char.length>0?(
-                    <pre style={{fontSize:"26px",whiteSpace: "pre-wrap"}}>{neshama_char}</pre>
+                    <pre style={{fontSize:"26px",whiteSpace: "pre-wrap",fontWeight:"bold"}}>{after_limud}</pre>
                 ):(
                     <p>לא נמצא</p>
                 )}
@@ -246,7 +246,7 @@ const Home=()=>{
                     textAlign:"right"
                 }}>קדיש</h2>
                 {kadish.length>0?(
-                    <pre style={{fontSize:"26px",whiteSpace: "pre-wrap"}}>{kadish}</pre>
+                    <pre style={{fontSize:"26px",whiteSpace: "pre-wrap",fontWeight:"bold"}}>{kadish}</pre>
                 ):(
                     <p>לא נמצא</p>
                 )}
@@ -257,7 +257,7 @@ const Home=()=>{
                     textAlign:"right"
                 }}>אשכבה</h2>
                 {ashcava.length>0?(
-                    <pre style={{fontSize:"26px",whiteSpace: "pre-wrap"}}>{ashcava}</pre>
+                    <pre style={{fontSize:"26px",whiteSpace: "pre-wrap",fontWeight:"bold"}}>{ashcava}</pre>
                 ):(
                     <p>לא נמצא</p>
                 )}
