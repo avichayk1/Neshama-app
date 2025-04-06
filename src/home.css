@@ -1,0 +1,10 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* מבטיח שה-body יתחיל מגובה מלא */
+}
+
+body {
+    background-color: #b0f9f9;
+    min-height: 100vh; /* מבטיח שהרקע יכסה לפחות את כל חלון התצוגה */
+}
