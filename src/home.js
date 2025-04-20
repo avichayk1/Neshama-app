@@ -1,6 +1,8 @@
 import './home.css';
 import React, { useState, useEffect } from 'react';
 //Mishana
+import { Helmet } from 'react-helmet';
+
 const mishna = {
     א: {
         source: "מסכת שבת פרק טו",
@@ -183,6 +185,16 @@ const Home=()=>{
             maxWidth: "80%", // Enforces a hard limit
             // backgroundColor: "#b0f9f9 " // Replace with your desired color
             }}>
+            
+            <Helmet>
+                <title>לימוד לעילוי נשמה לפי שם</title>
+                <meta name="description" content="האתר מציע לימוד אישי לעילוי נשמה לפי השם." />
+                <meta name="keywords" content="עילוי נשמה, לימוד רוחני, עילוי נשמה לפי שם" />
+                <meta property="og:title" content="לימוד לעילוי נשמה לפי שם" />
+                <meta property="og:description" content="האתר מציע לימוד אישי לעילוי נשמה לפי השם." />
+                <meta property="og:url" content="https://neshama-app.vercel.app/" />
+                <meta property="og:type" content="website" />
+            </Helmet>
             <h1 style={{textAlign: "center", fontSize:"60px"}}>לימוד לעילוי נשמה לפי שם</h1>
             <h1 style={{textAlign: "center", fontSize:"40px"}}>לעילוי נשמת כוכבה בת יסמינה</h1>
             <div style={{display: "flex",flexDirection: "rows",height: "60px",}}>
